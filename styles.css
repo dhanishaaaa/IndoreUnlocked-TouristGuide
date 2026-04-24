@@ -1,0 +1,719 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        rgba(40, 20, 10, 0.75),
+        rgba(40, 20, 10, 0.75)
+    ),
+    url("images/rajwada.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fdf6ee;
+    min-height: 100vh;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px 25px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Main title */
+.brand {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    color: #f5efe6;
+}
+
+/* Tagline */
+.hero-tagline {
+    font-size: 17px;
+    margin-top: 10px;
+    opacity: 0.8;
+    color: #f5efe6;
+}
+
+/* Button */
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 36px;
+    border-radius: 50px;
+    background: #d4a373;
+    color: #3b1b1b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* ABOUT SECTION  */
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-indore h2 {
+    font-size: 42px;
+    color: #d4a373;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    font-size: 20px;
+    color: #f5efe6;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.about-indore p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.about-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.highlight-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    background: linear-gradient(135deg, #a83232, #d4a373);
+    color: white;
+}
+
+.highlight-card .icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.highlight-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #d4a373;
+}
+
+.highlight-card:hover h3 {
+    color: white;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+    background: rgba(90, 30, 30, 0.9);
+    padding: 18px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #fdf6ee;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4a373;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+    text-align: center;
+    margin: 40px 0 10px;
+    font-size: 44px;
+    color: #fdf6ee;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #d4a373;
+    font-size: 28px;
+}
+
+/* ---------- PARAGRAPH ---------- */
+p {
+    max-width: 850px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #f5efe6;
+}
+
+/* ---------- BUTTON / LINKS ---------- */
+a {
+    display: inline-block;
+    margin: 25px auto;
+    padding: 14px 32px;
+    background: #d4a373;
+    color: #3b1b1b;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #f5efe6;
+}
+
+/* ---------- CARD GRID ---------- */
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    list-style: none;
+    padding: 40px;
+}
+
+/* ---------- CARDS ---------- */
+ul li {
+    background: linear-gradient(
+        rgba(90, 30, 30, 0.85),
+        rgba(60, 20, 20, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+ul li:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/* ---------- FORM ---------- */
+form {
+    background: rgba(90, 30, 30, 0.85);
+    width: 380px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: none;
+}
+
+input[type="submit"] {
+    background: #d4a373;
+    color: #3b1b1b;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+input[type="submit"]:hover {
+    background: #f5efe6;
+}
+
+/* SEARCH SECTION */
+.hero-search {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-search input {
+    width: 60%;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.hero-search button {
+    padding: 14px 25px;
+    margin-left: 10px;
+    border-radius: 30px;
+    border: none;
+    background: #d4a373;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-search button:hover {
+    background: #f5efe6;
+}
+
+/* EMERGENCY SECTION */
+.emergency {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(90, 30, 30, 0.8);
+    margin: 40px;
+    border-radius: 20px;
+}
+
+.emergency-box {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.emergency-box h3 {
+    font-size: 40px;
+    color: #ff3b3b;
+}
+
+/* Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Card */
+.cafe-card {
+  width: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cafe-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image */
+.cafe-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Info */
+.cafe-info {
+  padding: 15px;
+  color: white;
+}
+
+.cafe-info h3 {
+  margin-bottom: 5px;
+}
+
+.cafe-info p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* .cafe-card {
+  background: rgba(120, 0, 0, 0.6);
+} */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Dark overlay */
+.details-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+/* Center box */
+.details-box {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #f4b26b;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* BACKGROUND IMAGES FOR CARDS */
+
+/* Container */
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+/* Card */
+.category-card {
+  width: 180px;
+  height: 260px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  position: relative;
+
+  transition: transform 0.3s ease;
+
+  /* 🔥 FIXES EVERYTHING */
+  background-color: transparent !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* REMOVE ANY OVERLAY FROM ANYWHERE */
+.category-card::before,
+.category-card::after {
+  content: none !important;
+}
+
+/* Hover ONLY scale */
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+/* Click effect ONLY scale */
+.category-card:active {
+  transform: scale(0.97);
+}
+
+/* Remove browser focus/active junk */
+.category-card:focus,
+.category-card:focus-visible,
+a:focus,
+a:active {
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Text */
+.category-card span {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+
+/* Backgrounds */
+.food-bg {
+  background: url("images/food.png") center/cover;
+}
+
+.explore-bg {
+  background: url("images/explore.png") center/cover;
+}
+
+.shopping-bg {
+  background: url("images/shopping.png") center/cover;
+}
+
+.religious-bg {
+  background: url("images/temple.png") center/cover;
+}
+
+.fun-bg {
+  background: url("images/fun.png") center/cover;
+}
+
+.food-bg,
+.explore-bg,
+.shopping-bg,
+.religious-bg,
+.fun-bg {
+  background-size: cover;   /* 🔥 change */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;     /* fills empty space */
+}
+
+
+
+/* ITINERARY SECTION */
+.itinerary {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.itinerary-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.itinerary-card {
+    background: rgba(90, 30, 30, 0.85);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: rgba(90, 30, 30, 0.9);
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+/* Hide chatbot initially */
+#chat-container {
+    display: none;
+}
+
+
+
+
+/* Chat messages area */
+#chat-response {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Scrollbar styling */
+#chat-response::-webkit-scrollbar {
+    width: 5px;
+}
+#chat-response::-webkit-scrollbar-thumb {
+    background: #ff9f43;
+    border-radius: 10px;
+}
+
+/* Input area */
+#chatbox {
+    display: flex;
+    gap: 10px;
+}
+
+/* Chat button */
+#chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Chat container */
+#chat-container {
+    position: fixed;
+    bottom: 90px;   /* 👈 above button */
+    right: 20px;    /* 👈 aligned with button */
+    width: 300px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 15px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}    
+
+
+
+
+/* Input field */
+#msg {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 14px;
+}
+
+/* Placeholder color */
+#msg::placeholder {
+    color: #ddd;
+}
+
+/* Send button */
+#chatbox button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(45deg, #ff9f43, #ff6b6b);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#chatbox button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 159, 67, 0.6);
+}
+
+/* USER MESSAGE */
+.user-msg {
+    text-align: right;
+    margin: 8px 0;
+}
+
+.user-msg span {
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px 20px 0 20px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* BOT MESSAGE */
+.bot-msg {
+    text-align: left;
+    margin: 8px 0;
+}
+
+.bot-msg span {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 20px 20px 20px 0;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* Suggestion buttons (like "best cafe") */
+.suggestions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.suggestions button {
+    background: rgba(255,255,255,0.15);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.suggestions button:hover {
+    background: linear-gradient(45deg, #ff9f43, #ff6b6b);
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

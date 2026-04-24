@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Indore Unlocked - Home</title>
+</head>
+<script src="script.js"></script>
+<body>
+  <section class="hero">
+  <div class="hero-content">
+
+    <h1 class="brand">
+      Indore Unlocked
+    </h1>
+
+    <h2 class="subtitle">
+      The Tourist Guide
+    </h2>
+    <p class="hero-tagline">
+      Discover Heritage • Experience Flavors • Explore Culture
+    </p>
+
+    <a href="categories.html" class="hero-btn">
+      Start Exploring
+    </a>
+
+    
+
+  </div>
+  </section>
+    
+    <section class="hero-search">
+    <h2>Find Everything About Indore</h2>
+
+    <input type="text" id="searchInput" placeholder="Search by name, category, or area (Vijay Nagar, Palasia...)">
+    
+    <button onclick="searchFunction()">Search</button>
+    </section>
+
+    <section class="itinerary">
+    <h2>Plan Your Trip</h2>
+    <p>Expertly crafted itineraries to help you make the most of your time in Indore.</p>
+
+    <div class="itinerary-container">
+
+        <div class="itinerary-card">
+            <h3>1-Day Itinerary</h3>
+            <p><strong>Morning:</strong> Breakfast at Chappan Dukan (Poha & Jalebi)</p>
+            <p><strong>Afternoon:</strong> Visit Rajwada Palace & Central Museum</p>
+            <p><strong>Evening:</strong> Food trail at Sarafa Bazaar</p>
+        </div>
+
+        <div class="itinerary-card">
+            <h3>2-Day Itinerary</h3>
+            <p><strong>Day 1:</strong> Heritage Tour (Rajwada, Lal Bagh Palace)</p>
+            <p><strong>Day 2:</strong> Khajrana Temple & Phoenix Citadel Mall</p>
+        </div>
+
+    </div>
+    </section>
+
+    <section class="emergency">
+    <h2>Emergency Contacts</h2>
+    <p>Access immediate help and 24x7 medical services across Indore.</p>
+
+    <div class="emergency-box">
+        <div>
+            <h3>100</h3>
+            <p>Police</p>
+        </div>
+
+        <div>
+            <h3>108</h3>
+            <p>Ambulance</p>
+        </div>
+
+        <div>
+            <h3>101</h3>
+            <p>Fire</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="about-indore">
+    <div class="about-content">
+        <h2>About Indore</h2>
+
+        <p class="tagline">
+            The Heart of Madhya Pradesh • India’s Cleanest City
+        </p>
+
+        <p>
+            Indore is a vibrant blend of royal heritage, modern lifestyle, and unforgettable street food culture. 
+            From the majestic Rajwada Palace and Lal Bagh Palace to the buzzing lanes of Sarafa Bazaar and Chappan Dukan, 
+            the city offers a unique experience for every traveler.
+        </p>
+
+        <p>
+            Known as the commercial capital of Madhya Pradesh, Indore is not just a destination
+            it is an emotion. Whether you seek spirituality at Khajrana Temple, shopping at Phoenix Citadel, 
+            or late-night food trails, Indore welcomes you with warmth and flavor.
+        </p>
+
+    <div class="about-highlights">
+
+    <div class="highlight-card">
+        <span class="icon">🏆</span>
+        <h3>7+ Times</h3>
+        <p>Cleanest City of India</p>
+    </div>
+
+    <div class="highlight-card">
+        <span class="icon">🍛</span>
+        <h3>Food Capital</h3>
+        <p>Famous for Poha & Jalebi</p>
+    </div>
+
+    <div class="highlight-card">
+        <span class="icon">🏰</span>
+        <h3>Rich Heritage</h3>
+        <p>Maratha Architecture & Culture</p>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <button id="chat-toggle">💬</button>
+
+<div id="chat-container" style="display: none;">
+
+    <div id="chat-response"></div>
+
+    <div id="chatbox">
+        <input type="text" id="msg" placeholder="Ask something...">
+        <button onclick="sendMsg()">Send</button>
+    </div>
+
+    <div class="suggestions">
+        <button onclick="quickMsg('best cafe')">Best Cafe</button>
+        <button onclick="quickMsg('temples')">Temples</button>
+        <button onclick="quickMsg('malls')">Malls</button>
+    </div>
+
+</div>
+
+    <div class="contact-section">
+    <a href="contact.html" class="contact-btn">Contact</a>
+    </div>
+
+</body>
+</html>
